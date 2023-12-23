@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FinPOO - Sistema Bancário</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FinPOO - Sistema Bancário</h1>
+    <div class="account">
+      <h2>Conta Corrente</h2>
+      <input type="number" id="ccDeposit" placeholder="Valor para depósito">
+      <button onclick="depositarContaCorrente()">Depositar</button>
+      <input type="number" id="ccWithdraw" placeholder="Valor para saque">
+      <button onclick="sacarContaCorrente()">Sacar</button>
+    </div>
+    <div class="account">
+      <h2>Conta Poupança</h2>
+      <input type="number" id="cpDeposit" placeholder="Valor para depósito">
+      <button onclick="depositarContaPoupanca()">Depositar</button>
+      <input type="number" id="cpWithdraw" placeholder="Valor para saque" disabled>
+      <button disabled>Sacar</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
